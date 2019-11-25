@@ -1,0 +1,9 @@
+aws dynamodb create-table --table-name session --attribute-definitions \
+AttributeName=UserID,AttributeType=N --key-schema \
+AttributeName=UserID,KeyType=HASH \
+--provisioned-throughput ReadCapacityUnits=5,WriteCapacityUnits=5
+
+aws dynamodb create-table --table-name property --attribute-definitions \
+AttributeName=propertyId,AttributeType=S --key-schema \
+AttributeName=propertyId,KeyType=HASH \
+--provisioned-throughput ReadCapacityUnits=5,WriteCapacityUnits=5

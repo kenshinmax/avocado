@@ -1,0 +1,13 @@
+{
+    "property": [
+        {
+            "PutRequest": {
+              "Item": {
+                "UserID": {"N": "5346747"},
+                "CreationTime": {"N": "1574474415"},
+                "ExpirationTime": {"N": "1577066415"}
+              }
+            }
+        }
+    ]
+}
